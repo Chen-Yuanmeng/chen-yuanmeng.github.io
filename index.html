@@ -5,5 +5,14 @@
 
 	<body>
 		This is an example page.
+
+		<!-- 显示页面宽度和高度 -->
+		<p>页面宽度: <span id="pageWidth"></span>px</p>
+		<p>页面高度: <span id="pageHeight"></span>px</p>
+
+		<script>
+			document.getElementById("pageWidth").textContent = window.innerWidth;
+			document.getElementById("pageHeight").textContent = window.innerHeight;
+		</script>
 	</body>
 </html>
